@@ -13,8 +13,8 @@
     box-sizing: border-box;
 }
 
-li{
-    list-style: none;
+html{
+    font-size: 62.5%;
 }
 
 body{
@@ -54,15 +54,40 @@ body::after{
     height: 100%;
 }
 
-.container{
-    max-width: 100%;
-    width: 1200px;
-    margin: auto;
+li{
+    list-style: none;
+}
+
+button{
+    margin-top: 2.5rem;
+    background-image: linear-gradient(
+        to right,
+        hsl(236, 72%, 79%),
+        hsl(237, 63%, 64%)
+    );
+
+    color: #fff;
+    padding: 1.5rem;
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+    font-family: inherit;
+    letter-spacing: .2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 h1{
     color: var(--grayish-blue);
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+}
+
+.container{
+    max-width: 100%;
+    width: 120rem;
+    margin: auto;
 }
 
 .container-flex{
@@ -73,39 +98,38 @@ h1{
 
 .price-box{
     background-color: #fff;
-    padding: 50px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    color: var(--grayish-blue);
+    padding: 5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    color: var(--grayish-blue);}
 
-}
-
-.price-box h4{
+.price-box__title{
     margin: 0;
+    font-size: 1.8rem;
 }
 
-.price-box p{
-    font-size: 4em;
+.price-box__price{
+    font-size: 5rem;
     font-weight: bold;
-    margin: 20px 0;
-    width: 250px;
+    margin: 2rem 0;
+    width: 25rem;
 }
 
 .monthly{
     display: none;
 }
 
-.price-box ul{
-    border-top: 1px solid var(--light-grayish-blue);
+.price-box__list{
+    border-top: .1rem solid var(--light-grayish-blue);
     padding: 0;
     font-weight: 700;
 }
 
-.price-box ul li{
-    border-bottom: 1px solid var(--light-grayish-blue);
-    padding: 15px 0;
-    font-size: 14px;
+.price-box__list-item{
+    border-bottom: .1rem solid var(--light-grayish-blue);
+    padding: 1.5rem 0;
+    font-size: 1.4rem;
 }
 
 .price-box-premium{
@@ -114,7 +138,6 @@ h1{
         hsl(236, 72%, 79%),
         hsl(237, 63%, 64%)
     );
-
     color: #fff;
     transform: scale(1.1);
 }
@@ -127,37 +150,17 @@ h1{
     background-image: none;
     background-color: #fff;
     color:  hsl(237, 63%, 64%);
-
 }
 
-.price-box-premium .price-box ul, .price-box-premium .price-box ul li{
+.price-box-premium .price-box__list, .price-box-premium .price-box__list-item{
     border-color: #eee;
 }
 
 .toggle-container{
     color: var(--light-grayish-blue);
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
-button{
-    margin-top: 25px;
-    background-image: linear-gradient(
-        to right,
-        hsl(236, 72%, 79%),
-        hsl(237, 63%, 64%)
-    );
-
-    color: #fff;
-    padding: 15px;
-    width: 100%;
-    border: none;
-    text-transform: uppercase;
-    font-family: inherit;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
 
 .show-monthly .price-box .monthly{
     display: block;
@@ -180,12 +183,12 @@ button{
         hsl(237, 63%, 64%)
     );
     display: inline-block;
-    height: 30px;
-    width: 60px;
-    border-radius: 50px;
+    height: 3rem;
+    width: 6rem;
+    border-radius: 5rem;
     position: relative;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
 .toggle-container input{
@@ -194,19 +197,19 @@ button{
 }
 
 .toggle-container label .circle{
-    width: 25px;
-    height: 25px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     background-color: white;
     position: absolute;
-    top: 2.5px;
-    left: 2.5px;
+    top: .25rem;
+    left: .25rem;
     transition: transform 0.4s ease;
 }
 
 
 .toggle-container input:checked + label .circle{
-   transform: translateX(30px);
+   transform: translateX(3rem);
 }
 
 
