@@ -224,7 +224,7 @@ h1{
         transform: scale(1);
     }
 
-    .price-box.price-box-premium > *{
+    .price-box.price-box-premium > * {
         transform: scale(1)
     }
 }
