@@ -116,6 +116,10 @@ h1{
     width: 25rem;
 }
 
+.period{
+    font-size: 1.6rem;
+}
+
 .monthly{
     display: none;
 }
