@@ -2,4 +2,4 @@
 
 ![Design preview for the File Transfer pricing component coding challenge](./design/desktop-preview.jpg)
 
-HTML5, CSS3 and vanilla JavaScript.
+HTML5, CSS3 and vanilla JavaScript. 💸💸💸
