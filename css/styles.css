@@ -102,7 +102,8 @@ h1{
     margin: 1rem;
     border-radius: 1rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
-    color: var(--grayish-blue);}
+    color: var(--grayish-blue);
+}
 
 .price-box__title{
     margin: 0;
@@ -210,7 +211,6 @@ h1{
     left: .25rem;
     transition: transform 0.4s ease;
 }
-
 
 .toggle-container input:checked + label .circle{
    transform: translateX(3rem);
